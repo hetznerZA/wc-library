@@ -1,0 +1,12 @@
+{
+  "name": "wc-library",
+  "version": "1.0.0",
+  "private": true,
+  "authors": [
+    "hetzner.co.za"
+  ],
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {}
+}

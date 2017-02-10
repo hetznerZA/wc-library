@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>wc-library</title>
+    <link rel="import" href="wc-library.html">
+  </head>
+
+  <body>
+
+  	<p id="hello">Hello</p>
+    
+  </body>
+
+  <script type="text/javascript">
+  	
+  	var e = $('#hello');
+
+  	var arr = ['a','b','c'];
+  	var str = 'Hello my world';
+  	var res = str.includes('my');
+
+  	e.addClass('pio');
+
+  	e.attr('name','poi');
+
+  	res = e.attr('name');
+
+  	e.attr({
+  		'call':'meow',
+  		'back':'woof'
+  	});
+
+  	e.css('font-size','20px');
+
+  	e.css({
+  		'color':'red',
+  		'text-decoration':'underline',
+  		'font-weight':'700'
+  	});
+
+  	res = e.css('color');
+
+  	arr = [1,2,5,6,7,8,10];
+  	res = arr.findIndex(function(value, index, arr) {
+  		if (value> 4) {
+  			return true;
+  		}
+  	});
+
+    arr.pushUnique(111);
+
+    res = $('#hello');
+
+  	console.log(res);
+
+  </script>
+
+ </html>

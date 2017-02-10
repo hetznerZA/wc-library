@@ -1,0 +1,26 @@
+{
+  "name": "wc-library",
+  "main": "wc-library.html",
+  "description": "",
+  "version": "1.0.0",
+  "author": "hetzner.co.za",
+  "license": "MIT",
+  "config": {
+    "port": "8080"
+  },
+  "scripts": {
+    "start": "cross-conf-env wc-server -p npm_package_config_port",
+    "build": "npm run minify",
+    "minify": "uglifyjs wc-library.js -c -m -o wc-library.min.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cross-conf-env": "^1.0.5",
+    "uglify-js": "^2.7.0",
+    "wc-server": "hetznerza/wc-server#v1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
